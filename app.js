@@ -1,7 +1,7 @@
 const translations = {
     en: {
         navRooms: "Rooms", navAbout: "About Us", navContact: "Contact",
-        heroTitle: "Welcome to Hote Azur", heroSubtitle: "Your Comfort, Our Priority",
+        heroTitle: "Welcome to Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
         room1Title: "Single Room with Private Bath", room1Desc: "Perfect for solo travellers or couples on a budget.",
@@ -10,7 +10,7 @@ const translations = {
     },
     fr: {
         navRooms: "Chambres", navAbout: "À Propos", navContact: "Contact",
-        heroTitle: "Bienvenue à l'Hote Azur", heroSubtitle: "Votre Confort, Notre Priorité",
+        heroTitle: "Bienvenue à Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
         room1Title: "Chambre simple avec salle de bain privée", room1Desc: "Idéal pour les voyageurs seuls ou les couples à petit budget.",

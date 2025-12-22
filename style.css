@@ -4,7 +4,6 @@
     --accent-color: #F4A261;
     --text-color: #333;
     --white-color: #FFFFFF;
-    --teal-color: #2A9D8F;
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -14,58 +13,43 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: var(--font-family);
     color: var(--text-color);
     background-color: var(--white-color);
-    line-height: 1.6;
-    padding-top: 80px; /* Space for fixed header */
+    padding-top: 80px;
 }
 
-/* Header and Navbar */
+/* Header */
 .header {
     background-color: var(--white-color);
-    padding: 1rem 5%;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    height: 80px; /* Fixed height for easier calculation */
-    display: flex; /* Ensure content inside header aligns correctly */
-    align-items: center; /* Vertically center content */
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-logo {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    padding: 0 5%;
 }
 
 .logo-img {
-    height: 50px; /* Adjust as needed */
+    height: 50px;
     width: auto;
-    margin-right: 10px;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-item {
@@ -76,126 +60,48 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    position: relative;
-    transition: color 0.3s ease;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: var(--accent-color);
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
-
-.nav-link:hover {
-    color: var(--accent-color);
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
-/* Hero Section */
-/* style.css */
-.hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.5), rgba(0, 51, 102, 0.5)), 
-                url('VUESGENERALESNICEDRONE_-_VilledeNice-DavidNouy-copie-2-1200x899.jpg') no-repeat center center/cover;
-}
-
-.hero-text{
-    padding-bottom: 35px;
-}
-
-.hero-content {
-    animation: fadeIn 1s ease-in-out;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    padding: 0.6rem 2.5rem;
-    border-radius: 50px;
-    text-decoration: none;
+.btn-lang {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
     font-weight: 600;
-    transition: all 0.3s ease;
 }
+
+/* Hero */
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Drone Background Image */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('VUESGENERALESNICEDRONE_-_VilledeNice-DavidNouy-copie-2-1200x899.jpg') no-repeat center center/cover;
+    color: var(--white-color);
+}
+
+.hero-title { font-size: 3.5rem; margin-bottom: 1rem; }
 
 .btn-primary {
     background-color: var(--accent-color);
-    color: var(--white-color);
-    border: 2px solid var(--accent-color);
-    margin-top: 10px;
-}
-
-.btn-primary:hover {
-    background-color: transparent;
-    color: var(--accent-color);
-}
-
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-#contact-form input, #contact-form textarea {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-family: var(--font-family);
-}
-
-.whatsapp-link {
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
     text-decoration: none;
-    color: #25D366;
-    font-weight: 700;
-    font-size: 1.2rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-link:hover {
-    transform: scale(1.05);
-}
-
-.contact-info {
-    text-align: center;
-    margin-top: 2rem;
+    display: inline-block;
 }
 
 /* Sections */
 section {
-    padding: 6rem 5%;
+    padding: 5rem 10%;
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(30px);
+    transition: 0.8s ease-out;
 }
 
 section.visible {
@@ -210,7 +116,7 @@ section.visible {
     color: var(--primary-color);
 }
 
-/* Rooms Section */
+/* Rooms */
 .rooms-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -218,97 +124,32 @@ section.visible {
 }
 
 .room-card {
-    background-color: var(--white-color);
-    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.room-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.room-image img { width: 100%; height: 250px; object-fit: cover; }
+.room-content { padding: 1.5rem; }
+
+/* Contact Form */
+.contact-container { max-width: 600px; margin: 0 auto; }
+#contact-form { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
+#contact-form input, textarea { padding: 1rem; border: 1px solid #ddd; border-radius: 5px; }
+
+.whatsapp-link {
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.room-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.room-card:hover .room-image img {
-    transform: scale(1.05);
-}
-
-.room-content {
-    padding: 1.5rem;
-}
-
-.room-title {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-/* About and Contact Sections */
-.about-section, .contact-section {
-    background-color: var(--secondary-color);
-    text-align: center;
-}
-
-.about-content p, .contact-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-}
-
-/* Footer */
 .footer {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    text-align: center;
-    padding: 2rem 0;
-}
-
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none; /* Simplification for this example. A real world scenario would use a hamburger menu. */
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-}
-
-/* style.css */
-.btn-lang {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.3s;
-}
-
-.btn-lang:hover {
-    background-color: var(--accent-color);
+    text-align: center;
+    padding: 2rem;
 }

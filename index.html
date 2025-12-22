@@ -11,7 +11,9 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#home" class="nav-logo"><img src="HoteAzurLogo.jpg" alt="Hote Azur Logo" class="logo-img"></a>
+            <a href="#home" class="nav-logo">
+                <img src="HoteAzurLogo.jpg" alt="Hote Azur Logo" class="logo-img">
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
@@ -29,7 +31,7 @@
                 <h1 id="hero-title" class="hero-title">Welcome to Hote Azur</h1>
                 <p id="hero-subtitle" class="hero-subtitle">Your Comfort, Our Priority</p>
                 <p id="hero-text" class="hero-text">Experience a charming stay in our hotel with modern amenities in the heart of the city.</p>
-                <a href="#" class="btn btn-primary" onclick="bookNow()">Book Now</a>
+                <a href="#" id="book-btn" class="btn btn-primary" onclick="bookNow()">Book Now</a>
             </div>
         </section>
 
@@ -57,27 +59,38 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Contact Us</h2>
-         <div class="contact-container">
-        <form id="contact-form" action="mailto:reservation-hoteazur@googlegroups.com" method="post" enctype="text/plain">
-            <input type="text" id="form-name" name="name" placeholder="Your Name" required>
-            <input type="email" id="form-email" name="email" placeholder="Your Email" required>
-            <textarea id="form-message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" id="form-submit" class="btn btn-primary">Send Message</button>
-        </form>
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 id="about-title" class="section-title">About Hote Azur</h2>
+                <p id="about-text">We pride ourselves on a welcoming atmosphere and exceptional service. Your satisfaction is our top priority.</p>
+            </div>
+        </section>
 
-        <div class="contact-info">
-            <p>Email: <a href="mailto:reservation-hoteazur@googlegroups.com">reservation-hoteazur@googlegroups.com</a></p>
-            <p>
-                <a href="https://wa.me/14385359448" target="_blank" class="whatsapp-link">
-                    <i class="fab fa-whatsapp"></i> 438-535-9448
-                </a>
-            </p>
-        </div>
-    </div>
-</section>
+        <section id="contact" class="contact-section">
+            <h2 id="contact-title" class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <form id="contact-form" action="mailto:reservation-hoteazur@googlegroups.com" method="post" enctype="text/plain">
+                    <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="form-email" name="email" placeholder="Your Email" required>
+                    <textarea id="form-message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" id="form-submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:reservation-hoteazur@googlegroups.com">reservation-hoteazur@googlegroups.com</a></p>
+                    <p>
+                        <a href="https://wa.me/14385359448" target="_blank" class="whatsapp-link">
+                            <i class="fab fa-whatsapp"></i> 438-535-9448
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hote Azur. All rights reserved.</p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

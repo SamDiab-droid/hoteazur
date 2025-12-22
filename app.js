@@ -1,31 +1,21 @@
 const translations = {
     en: {
-        navRooms: "Rooms",
-        navContact: "Contact",
-        heroTitle: "Welcome to Hote Azur",
+        navRooms: "Rooms", navAbout: "About Us", navContact: "Contact",
+        heroTitle: "Welcome to Hote Azur", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city.",
-        bookBtn: "Book Now",
-        roomsTitle: "Our Rooms",
-        room1Title: "Deluxe Double Room with bath",
-        room1Desc: "Spacious and elegant, featuring a private bathtub.",
-        room2Title: "Comfort Triple Room with Shower",
-        room2Desc: "Perfect for families, equipped with a modern shower.",
-        contactTitle: "Contact Us",
-        langBtn: "FR"
+        bookBtn: "Book Now", roomsTitle: "Our Rooms",
+        room1Title: "Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
+        room2Title: "Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
+        contactTitle: "Contact Us", langBtn: "FR"
     },
     fr: {
-        navRooms: "Chambres",
-        navContact: "Contact",
-        heroTitle: "Bienvenue à l'Hote Azur",
+        navRooms: "Chambres", navAbout: "À Propos", navContact: "Contact",
+        heroTitle: "Bienvenue à l'Hote Azur", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville.",
-        bookBtn: "Réserver",
-        roomsTitle: "Nos Chambres",
-        room1Title: "Chambre Double Deluxe avec baignoire",
-        room1Desc: "Spacieuse et élégante, disposant d'une baignoire privée.",
-        room2Title: "Chambre Triple Confort avec douche",
-        room2Desc: "Parfaite pour les familles, équipée d'une douche moderne.",
-        contactTitle: "Contactez-nous",
-        langBtn: "EN"
+        bookBtn: "Réserver", roomsTitle: "Nos Chambres",
+        room1Title: "Chambre Double Deluxe", room1Desc: "Spacieuse et élégante, disposant d'une baignoire privée.",
+        room2Title: "Chambre Triple Confort", room2Desc: "Parfaite pour les familles, équipée d'une douche moderne.",
+        contactTitle: "Contactez-nous", langBtn: "EN"
     }
 };
 
@@ -36,8 +26,10 @@ function toggleLanguage() {
     const t = translations[currentLang];
 
     document.getElementById('nav-rooms').innerText = t.navRooms;
+    document.getElementById('nav-about').innerText = t.navAbout;
     document.getElementById('nav-contact').innerText = t.navContact;
     document.getElementById('hero-title').innerText = t.heroTitle;
+    document.getElementById('hero-subtitle').innerText = t.heroSubtitle;
     document.getElementById('hero-text').innerText = t.heroText;
     document.getElementById('book-btn').innerText = t.bookBtn;
     document.getElementById('rooms-title').innerText = t.roomsTitle;

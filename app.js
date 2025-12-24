@@ -4,8 +4,8 @@ const translations = {
         heroTitle: "Welcome to Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
-        room1Title: "Single Room with Private Bath", room1Desc: "Perfect for solo travellers or couples on a budget.",
-        room2Title: "Double Room with Private Bath", room2Desc: "Spacious and elegant, featuring a private bathroom.",
+        room1Title: "Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
+        room2Title: "Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
         contactTitle: "Contact Us", langBtn: "FR"
     },
     fr: {
@@ -13,8 +13,8 @@ const translations = {
         heroTitle: "Bienvenue à Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
-        room1Title: "Chambre simple avec salle de bain privée", room1Desc: "Idéal pour les voyageurs seuls ou les couples à petit budget.",
-        room2Title: "Chambre double avec salle de bain privée", room2Desc: "Spacieux et élégant, avec salle de bain privée.",
+        room1Title: "Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée",
+        room2Title: "Chambre triple confort", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau moderne.",
         contactTitle: "Contactez-nous", langBtn: "EN"
     }
 };

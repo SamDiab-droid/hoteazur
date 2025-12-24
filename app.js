@@ -25,7 +25,7 @@ function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'fr' : 'en';
     const t = translations[currentLang];
 
-    // All these IDs must exist in index.html or the script will stop working!
+    // Update Text Content
     document.getElementById('nav-rooms').innerText = t.navRooms;
     document.getElementById('nav-contact').innerText = t.navContact;
     document.getElementById('hero-title').innerText = t.heroTitle;
@@ -39,8 +39,19 @@ function toggleLanguage() {
     document.getElementById('room2-desc').innerText = t.room2Desc;
     document.getElementById('contact-title').innerText = t.contactTitle;
     document.getElementById('lang-toggle').innerText = t.langBtn;
-}
 
+    // --- Font Adjustment Logic ---
+    const heroTitle = document.getElementById('hero-title');
+    const heroContent = document.querySelector('.hero-content');
+
+    if (currentLang === 'fr') {
+        heroTitle.style.fontSize = "2.45rem"; // Slightly smaller than 2.5rem
+        heroContent.style.fontSize = "0.899rem"; // Shrinks subtitle and text slightly
+    } else {
+        heroTitle.style.fontSize = "2.5rem"; // Back to original
+        heroContent.style.fontSize = "1rem";   // Back to original
+    }
+}
 function bookNow() {
     window.location.href = "https://www.booking.com/hotel/fr/cozy-downtown-room-near-the-beach-with-private-bath.html?chal_t=1766291207941&force_referer=";
 }

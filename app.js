@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        navRooms: "Rooms", navContact: "Contact",
+        navRooms: "Our Rooms", navContact: "Contact",
         heroTitle: "Welcome to Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
@@ -9,7 +9,7 @@ const translations = {
         contactTitle: "Contact Us", langBtn: "FR"
     },
     fr: {
-        navRooms: "Chambres", navContact: "Contact",
+        navRooms: "Nos Chambres", navContact: "Contact",
         heroTitle: "Bienvenue à Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",

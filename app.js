@@ -25,6 +25,7 @@ function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'fr' : 'en';
     const t = translations[currentLang];
 
+    // All these IDs must exist in index.html or the script will stop working!
     document.getElementById('nav-rooms').innerText = t.navRooms;
     document.getElementById('nav-about').innerText = t.navAbout;
     document.getElementById('nav-contact').innerText = t.navContact;

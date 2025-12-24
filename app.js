@@ -1,50 +1,46 @@
 const translations = {
     en: {
-        "nav-home": "Home",
-        "nav-services": "Services",
-        "nav-contact": "Contact",
-        "welcome-msg": "Welcome to our Website",
-        "sub-text": "We provide the best services for you."
-    },
-    es: {
-        "nav-home": "Inicio",
-        "nav-services": "Servicios",
-        "nav-contact": "Contacto",
-        "welcome-msg": "Bienvenido a nuestro sitio web",
-        "sub-text": "Ofrecemos los mejores servicios para usted."
+        navRooms: "Rooms", navContact: "Contact",
+        heroTitle: "Welcome to Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
+        heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city.",
+        bookBtn: "Book Now", roomsTitle: "Our Rooms",
+        room1Title: "Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
+        room2Title: "Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
+        contactTitle: "Contact Us", langBtn: "FR"
     },
     fr: {
-        "nav-home": "Accueil",
-        "nav-services": "Services",
-        "nav-contact": "Contact",
-        "welcome-msg": "Bienvenue sur notre site",
-        "sub-text": "Nous fournissons les meilleurs services pour vous."
+        navRooms: "Chambres", navContact: "Contact",
+        heroTitle: "Bienvenue à Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
+        heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville.",
+        bookBtn: "Réserver", roomsTitle: "Nos Chambres",
+        room1Title: "Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée",
+        room2Title: "Chambre triple confort", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau moderne.",
+        contactTitle: "Contactez-nous", langBtn: "EN"
     }
 };
 
-const languageSwitcher = document.getElementById('language-switcher');
+let currentLang = 'en';
 
-// Function to update text based on selected language
-function updateLanguage(lang) {
-    const elements = document.querySelectorAll('[data-i18n]');
-    
-    elements.forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'fr' : 'en';
+    const t = translations[currentLang];
 
-    // Update the document language attribute
-    document.documentElement.lang = lang;
+    // All these IDs must exist in index.html or the script will stop working!
+    document.getElementById('nav-rooms').innerText = t.navRooms;
+    document.getElementById('nav-contact').innerText = t.navContact;
+    document.getElementById('hero-title').innerText = t.heroTitle;
+    document.getElementById('hero-subtitle').innerText = t.heroSubtitle;
+    document.getElementById('hero-text').innerText = t.heroText;
+    document.getElementById('book-btn').innerText = t.bookBtn;
+    document.getElementById('rooms-title').innerText = t.roomsTitle;
+    document.getElementById('room1-title').innerText = t.room1Title;
+    document.getElementById('room1-desc').innerText = t.room1Desc;
+    document.getElementById('room2-title').innerText = t.room2Title;
+    document.getElementById('room2-desc').innerText = t.room2Desc;
+    document.getElementById('contact-title').innerText = t.contactTitle;
+    document.getElementById('lang-toggle').innerText = t.langBtn;
 }
 
-// Event listener for the dropdown
-languageSwitcher.addEventListener('change', (e) => {
-    updateLanguage(e.target.value);
-});
-
-// Run once when the page loads
-document.addEventListener('DOMContentLoaded', () => {
-    updateLanguage('en');
-});
+function bookNow() {
+    window.location.href = "https://www.booking.com/hotel/fr/cozy-downtown-room-near-the-beach-with-private-bath.html?chal_t=1766291207941&force_referer=";
+}

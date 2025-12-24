@@ -3,31 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Language Website</title>
+    <title>Hote Azur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav>
-        <div class="logo">Brand</div>
-        <ul id="nav-menu">
-            <li><a href="#home" data-i18n="nav-home">Home</a></li>
-            <li><a href="#services" data-i18n="nav-services">Services</a></li>
-            <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
-        </ul>
-        <div class="lang-wrapper">
-            <select id="language-switcher">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-            </select>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <h1 data-i18n="welcome-msg">Welcome to our Website</h1>
-        <p data-i18n="sub-text">We provide the best services for you.</p>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="nav-logo">
+                <img src="HoteAzurLogo.png" alt="Hote Azur Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#rooms" class="nav-link" id="nav-rooms">Rooms</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                <li><button id="lang-toggle" class="btn-lang" onclick="toggleLanguage()">FR</button></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Welcome to Hote Azur</h1>
+                <p id="hero-subtitle" class="hero-subtitle">Your Comfort, Our Priority</p>
+                <p id="hero-text" class="hero-text">Experience a charming stay in our hotel with modern amenities in the heart of the city.</p>
+                <button class="btn btn-primary" id="book-btn" onclick="bookNow()">Book Now</button>
+            </div>
+        </section>
+
+        <section id="rooms" class="rooms-section">
+            <h2 id="rooms-title" class="section-title">Our Rooms</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-content">
+                        <h3 id="room1-title">Deluxe Double Room</h3>
+                        <p id="room1-desc">Spacious and elegant, featuring a private bathtub.</p>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-content">
+                        <h3 id="room2-title">Comfort Triple Room</h3>
+                        <p id="room2-desc">Perfect for families, equipped with a modern shower.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 id="contact-title" class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <p>Email: <a href="mailto:reservation-hoteazur@googlegroups.com">reservation-hoteazur@googlegroups.com</a></p>
+                <p>
+                    <a href="https://wa.me/14385359448" target="_blank" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i> 438-535-9448
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
 
     <script src="app.js"></script>
 </body>

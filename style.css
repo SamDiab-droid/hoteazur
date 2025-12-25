@@ -46,8 +46,8 @@ body {
 .hero-content {
     background: rgba(0, 0, 0, 0.5);
     padding: 3rem;
-    border-radius: 15px;
-    max-width: 800px;
+    border-radius: 20px;
+    max-width: 900px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }

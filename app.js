@@ -1,20 +1,20 @@
 const translations = {
     en: {
         navRooms: "Our Rooms", navContact: "Contact",
-        heroTitle: "Welcome to Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
-        heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city.",
+        heroTitle: "Welcome to Hotel Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
+        heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city. Address : 73 Boulevard Francois Grosso.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
-        room1Title: "Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
-        room2Title: "Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
+        room1Title: "4x - Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
+        room2Title: "3x - Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
         contactTitle: "Contact Us", langBtn: "FR"
     },
     fr: {
         navRooms: "Nos Chambres", navContact: "Contact",
-        heroTitle: "Bienvenue à Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
-        heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville.",
+        heroTitle: "Bienvenue à Hôtel Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
+        heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville. Addresse : 73 Boulevard Francois Grosso.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
-        room1Title: "Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée",
-        room2Title: "Chambre triple confort", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau moderne.",
+        room1Title: "4x - Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée",
+        room2Title: "3x - Chambre triple confort", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau moderne.",
         contactTitle: "Contactez-nous", langBtn: "EN"
     }
 };

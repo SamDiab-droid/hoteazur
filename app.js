@@ -1,8 +1,8 @@
 const translations = {
     en: {
         navRooms: "Our Rooms", navContact: "Contact",
-        heroTitle: "Welcome to Hotel Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
-        heroText: "Experience a charming stay in our hotel with modern amenities in the heart of the city. Address : 73 Boulevard Francois Grosso.",
+        heroTitle: "Welcome to Nice - Hotel Hote D'Azur", heroSubtitle: "Your Comfort, Our Priority",
+        heroText: "Experience a charming stay with modern amenities in the heart of the city. Address : 73 Boulevard Francois Grosso.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
         room1Title: "4x - Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
         room2Title: "3x - Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
@@ -10,8 +10,8 @@ const translations = {
     },
     fr: {
         navRooms: "Nos Chambres", navContact: "Contact",
-        heroTitle: "Bienvenue à Hôtel Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
-        heroText: "Vivez un séjour charmant dans notre hôtel avec des équipements modernes au cœur de la ville. Addresse : 73 Boulevard Francois Grosso.",
+        heroTitle: "Bienvenue à Nice - Hôtel Hote D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
+        heroText: "Séjour charmant avec équipements modernes au cœur de la ville. Adresse : 73 Boulevard François Grosso.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
         room1Title: "4x - Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée",
         room2Title: "3x - Chambre triple confort", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau moderne.",
@@ -46,7 +46,7 @@ function toggleLanguage() {
 
     if (currentLang === 'fr') {
         heroTitle.style.fontSize = "2.45rem"; // Slightly smaller than 2.5rem
-        heroContent.style.fontSize = "0.899rem"; // Shrinks subtitle and text slightly
+        heroContent.style.fontSize = "0.92rem"; // Shrinks subtitle and text slightly
     } else {
         heroTitle.style.fontSize = "2.5rem"; // Back to original
         heroContent.style.fontSize = "1rem";   // Back to original

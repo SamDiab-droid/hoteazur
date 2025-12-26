@@ -4,8 +4,9 @@ const translations = {
         heroTitle: "Welcome to Nice - Hotel Hôte D'Azur", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Charming stay with modern amenities in the heart of the city. Address : 73 Boulevard Francois Grosso.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
-        room1Title: "4x - Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathtub.",
-        room2Title: "3x - Comfort Triple Room", room2Desc: "Perfect for families, equipped with a modern shower.",
+        room1Title: "4x - Deluxe Double Room : 100€", room1Desc: "Spacious and elegant, featuring a private bathroom. No cancellations allowed.",
+        room2Title: "3x - Comfort Triple Room : 105€", room2Desc: "Perfect for families, equipped with a private bathroom. No cancellations allowed.",
+        mapTitle: "Our Location",
         contactTitle: "Contact Us", langBtn: "FR"
     },
     fr: {
@@ -13,8 +14,9 @@ const translations = {
         heroTitle: "Bienvenue à Nice - Hôtel Hôte D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Séjour charmant avec équipements modernes au cœur de la ville. Adresse : 73 Boulevard François Grosso.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
-        room1Title: "4x - Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée",
-        room2Title: "3x - Chambre triple confort", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau moderne.",
+        room1Title: "4x - Chambre double deluxe : 100€", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée. Aucune annulation n'est acceptée.",
+        room2Title: "3x - Chambre triple confort : 105€", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
+        mapTitle: "Notre Emplacement",
         contactTitle: "Contactez-nous", langBtn: "EN"
     }
 };
@@ -39,6 +41,8 @@ function toggleLanguage() {
     document.getElementById('room2-desc').innerText = t.room2Desc;
     document.getElementById('contact-title').innerText = t.contactTitle;
     document.getElementById('lang-toggle').innerText = t.langBtn;
+    document.getElementById('map-title').innerText = t.mapTitle;
+
 
     // --- Font Adjustment Logic ---
     const heroTitle = document.getElementById('hero-title');

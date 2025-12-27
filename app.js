@@ -2,7 +2,7 @@ const translations = {
     en: {
         navRooms: "Our Rooms", navContact: "Contact",
         heroTitle: "Welcome to Nice - Hotel Hôte D'Azur", heroSubtitle: "Your Comfort, Our Priority",
-        heroText: "Charming stay with modern amenities in the heart of the city. Address : 73 Boulevard Francois Grosso.",
+        heroText: "Charming stay with modern amenities in the heart of the city. <br>Address : 73 Boulevard Francois Grosso.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
         room1Title: "4x - Deluxe Double Room : 100€", room1Desc: "Spacious and elegant, featuring a private bathroom. No cancellations allowed.",
         room2Title: "3x - Comfort Triple Room : 105€", room2Desc: "Perfect for families, equipped with a private bathroom. No cancellations allowed.",
@@ -16,7 +16,7 @@ const translations = {
     fr: {
         navRooms: "Nos Chambres", navContact: "Contact",
         heroTitle: "Bienvenue à Nice - Hôtel Hôte D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
-        heroText: "Séjour charmant avec équipements modernes au cœur de la ville. Adresse : 73 Boulevard François Grosso.",
+        heroText: "Séjour charmant avec équipements modernes au cœur de la ville. <br>Adresse : 73 Boulevard François Grosso.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
         room1Title: "4x - Chambre double deluxe : 100€", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée. Aucune annulation n'est acceptée.",
         room2Title: "3x - Chambre triple confort : 105€", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
@@ -35,11 +35,12 @@ function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'fr' : 'en';
     const t = translations[currentLang];
 
+    // Standard updates
     document.getElementById('nav-rooms').innerText = t.navRooms;
     document.getElementById('nav-contact').innerText = t.navContact;
     document.getElementById('hero-title').innerText = t.heroTitle;
     document.getElementById('hero-subtitle').innerText = t.heroSubtitle;
-    document.getElementById('hero-text').innerText = t.heroText;
+    document.getElementById('hero-text').innerHTML = t.heroText;
     document.getElementById('book-btn').innerText = t.bookBtn;
     document.getElementById('rooms-title').innerText = t.roomsTitle;
     document.getElementById('room1-title').innerText = t.room1Title;
@@ -50,21 +51,21 @@ function toggleLanguage() {
     document.getElementById('lang-toggle').innerText = t.langBtn;
     document.getElementById('map-title').innerText = t.mapTitle;
 
-    // Form Updates
+    // Form Redirection & Placeholders
     document.getElementById('form-email').placeholder = t.emailPh;
     document.getElementById('form-msg').placeholder = t.msgPh;
     document.getElementById('form-btn').innerText = t.sendBtn;
     document.getElementById('form-next').value = t.successPage;
 
-    // Font Logic
+    // Font Layout Adjustment
     const heroTitle = document.getElementById('hero-title');
     const heroContent = document.querySelector('.hero-content');
     if (currentLang === 'fr') {
-        heroTitle.style.fontSize = "2.45rem";
+        heroTitle.style.fontSize = "2.5rem";
         heroContent.style.fontSize = "0.92rem";
     } else {
         heroTitle.style.fontSize = "2.5rem";
-        heroContent.style.fontSize = "0.85rem";
+        heroContent.style.fontSize = "0.92rem";
     }
 }
 

@@ -44,12 +44,32 @@ body {
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Your black fade */
     padding: 3rem;
     border-radius: 20px;
     max-width: 900px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Your border */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.hero-text {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    opacity: 0.9;
+    display: block;
+    width: 100%;
+    /* This height covers exactly two lines of text */
+    min-height: 3.2em; 
+}
+
+/* THE JUMP FIX: Forces the address to always occupy the same height */
+.address-line {
+    display: inline-block;
+    min-height: 1.6em; 
+    width: 100%;
+    /* Uses a standard font immediately so it doesn't shift later */
+    font-family: Arial, sans-serif; 
 }
 
 .hero-subtitle {
@@ -57,19 +77,6 @@ body {
     margin: 10px 0;
     font-weight: 300;
 }
-
-.hero-text {
-    margin-bottom: 25px;
-    line-height: 1.6;
-    opacity: 0.9;
-    /* FIX: Keeps the layout stable during font-loading */
-    display: block;
-    width: 100%;
-    min-height: 1.6em; 
-    font-family: 'Poppins', Arial, sans-serif; /* Fallback to Arial */
-    text-rendering: optimizeLegibility;
-}
-
 
 .map-section {
     padding: 4rem 10% 0 10%; /* Matches your other sections */

@@ -11,6 +11,10 @@ const translations = {
         emailPh: "Your Email",
         msgPh: "Your Message",
         sendBtn: "Send Message"
+        successPage: "https://samdiab-droid.github.io/hoteazur/success.html",
+        emailPh: "Your Email",
+        msgPh: "Your Message",
+        sendBtn: "Send Message"
     },
     fr: {
         navRooms: "Nos Chambres", navContact: "Contact",
@@ -21,6 +25,10 @@ const translations = {
         room2Title: "3x - Chambre triple confort : 105€", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
         mapTitle: "Notre Emplacement",
         contactTitle: "Contactez-nous", langBtn: "EN" , 
+        emailPh: "Votre Email",
+        msgPh: "Votre Message",
+        sendBtn: "Envoyer"
+        successPage: "https://samdiab-droid.github.io/hoteazur/success.html",
         emailPh: "Votre Email",
         msgPh: "Votre Message",
         sendBtn: "Envoyer"
@@ -48,6 +56,10 @@ function toggleLanguage() {
     document.getElementById('contact-title').innerText = t.contactTitle;
     document.getElementById('lang-toggle').innerText = t.langBtn;
     document.getElementById('map-title').innerText = t.mapTitle;
+    document.getElementById('form-email').placeholder = t.emailPh;
+    document.getElementById('form-msg').placeholder = t.msgPh;
+    document.getElementById('form-btn').innerText = t.sendBtn;
+    document.getElementById('form-next').value = t.successPage;
     document.getElementById('form-email').placeholder = t.emailPh;
     document.getElementById('form-msg').placeholder = t.msgPh;
     document.getElementById('form-btn').innerText = t.sendBtn;

@@ -10,7 +10,7 @@ const translations = {
         contactTitle: "Contact Us", langBtn: "FR" ,
         emailPh: "Your Email",
         msgPh: "Your Message",
-        sendBtn: "Send Message"
+        sendBtn: "Send Message",
         successPage: "https://samdiab-droid.github.io/hoteazur/success.html",
         emailPh: "Your Email",
         msgPh: "Your Message",
@@ -27,7 +27,7 @@ const translations = {
         contactTitle: "Contactez-nous", langBtn: "EN" , 
         emailPh: "Votre Email",
         msgPh: "Votre Message",
-        sendBtn: "Envoyer"
+        sendBtn: "Envoyer",
         successPage: "https://samdiab-droid.github.io/hoteazur/success.html",
         emailPh: "Votre Email",
         msgPh: "Votre Message",

@@ -7,7 +7,10 @@ const translations = {
         room1Title: "4x - Deluxe Double Room : 100€", room1Desc: "Spacious and elegant, featuring a private bathroom. No cancellations allowed.",
         room2Title: "3x - Comfort Triple Room : 105€", room2Desc: "Perfect for families, equipped with a private bathroom. No cancellations allowed.",
         mapTitle: "Our Location",
-        contactTitle: "Contact Us", langBtn: "FR"
+        contactTitle: "Contact Us", langBtn: "FR" ,
+        emailPh: "Your Email",
+        msgPh: "Your Message",
+        sendBtn: "Send Message"
     },
     fr: {
         navRooms: "Nos Chambres", navContact: "Contact",
@@ -17,7 +20,10 @@ const translations = {
         room1Title: "4x - Chambre double deluxe : 100€", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée. Aucune annulation n'est acceptée.",
         room2Title: "3x - Chambre triple confort : 105€", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
         mapTitle: "Notre Emplacement",
-        contactTitle: "Contactez-nous", langBtn: "EN"
+        contactTitle: "Contactez-nous", langBtn: "EN" , 
+        emailPh: "Votre Email",
+        msgPh: "Votre Message",
+        sendBtn: "Envoyer"
     }
 };
 
@@ -42,6 +48,11 @@ function toggleLanguage() {
     document.getElementById('contact-title').innerText = t.contactTitle;
     document.getElementById('lang-toggle').innerText = t.langBtn;
     document.getElementById('map-title').innerText = t.mapTitle;
+    document.getElementsByName('email')[0].placeholder = t.emailPh;
+    document.getElementsByName('message')[0].placeholder = t.msgPh;
+    document.getElementById('form-email').placeholder = t.emailPh;
+    document.getElementById('form-msg').placeholder = t.msgPh;
+    document.getElementById('form-btn').innerText = t.sendBtn;
 
 
     // --- Font Adjustment Logic ---

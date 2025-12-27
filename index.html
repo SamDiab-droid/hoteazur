@@ -66,17 +66,33 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+       <section id="contact" class="contact-section">
             <h2 id="contact-title" class="section-title">Contact Us</h2>
+    
             <div class="contact-container">
-                <p>Email: <a href="mailto:reservation-hoteazur@googlegroups.com">reservation-hoteazur@googlegroups.com</a></p>
-                <p>
-                    <a href="https://wa.me/14385359448" target="_blank" class="whatsapp-link">
-                        <i class="fab fa-whatsapp"></i> 438-535-9448
-                    </a>
-                </p>
+            <form action="https://formsubmit.co/reservation-hoteazur@googlegroups.com" method="POST" class="contact-form">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div class="form-group">
+                <input type="email" name="email" id="form-email" placeholder="Your Email" required>
             </div>
+            <div class="form-group">
+                <textarea name="message" id="form-msg" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" id="form-btn" class="btn-primary">Send Message</button>
+            </form>
+
+            <div class="contact-info" style="margin-top: 2rem;">
+            <p>
+                <a href="https://wa.me/14385359448" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> 438-535-9448
+                </a>
+            </p>
+            </div>
+        </div>
         </section>
+
     </main>
 
     <script src="app.js"></script>

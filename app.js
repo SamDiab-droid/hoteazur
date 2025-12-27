@@ -7,14 +7,11 @@ const translations = {
         room1Title: "4x - Deluxe Double Room : 100€", room1Desc: "Spacious and elegant, featuring a private bathroom. No cancellations allowed.",
         room2Title: "3x - Comfort Triple Room : 105€", room2Desc: "Perfect for families, equipped with a private bathroom. No cancellations allowed.",
         mapTitle: "Our Location",
-        contactTitle: "Contact Us", langBtn: "FR" ,
+        contactTitle: "Contact Us", langBtn: "FR",
         emailPh: "Your Email",
         msgPh: "Your Message",
         sendBtn: "Send Message",
-        successPage: "https://samdiab-droid.github.io/hoteazur/success.html",
-        emailPh: "Your Email",
-        msgPh: "Your Message",
-        sendBtn: "Send Message"
+        successPage: "https://samdiab-droid.github.io/hoteazur/success.html"
     },
     fr: {
         navRooms: "Nos Chambres", navContact: "Contact",
@@ -24,14 +21,11 @@ const translations = {
         room1Title: "4x - Chambre double deluxe : 100€", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée. Aucune annulation n'est acceptée.",
         room2Title: "3x - Chambre triple confort : 105€", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
         mapTitle: "Notre Emplacement",
-        contactTitle: "Contactez-nous", langBtn: "EN" , 
+        contactTitle: "Contactez-nous", langBtn: "EN",
         emailPh: "Votre Email",
         msgPh: "Votre Message",
         sendBtn: "Envoyer",
-        successPage: "https://samdiab-droid.github.io/hoteazur/success.html",
-        emailPh: "Votre Email",
-        msgPh: "Votre Message",
-        sendBtn: "Envoyer"
+        successPage: "https://samdiab-droid.github.io/hoteazur/merci.html"
     }
 };
 
@@ -41,7 +35,6 @@ function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'fr' : 'en';
     const t = translations[currentLang];
 
-    // Update Text Content
     document.getElementById('nav-rooms').innerText = t.navRooms;
     document.getElementById('nav-contact').innerText = t.navContact;
     document.getElementById('hero-title').innerText = t.heroTitle;
@@ -56,27 +49,25 @@ function toggleLanguage() {
     document.getElementById('contact-title').innerText = t.contactTitle;
     document.getElementById('lang-toggle').innerText = t.langBtn;
     document.getElementById('map-title').innerText = t.mapTitle;
+
+    // Form Updates
     document.getElementById('form-email').placeholder = t.emailPh;
     document.getElementById('form-msg').placeholder = t.msgPh;
     document.getElementById('form-btn').innerText = t.sendBtn;
     document.getElementById('form-next').value = t.successPage;
-    document.getElementById('form-email').placeholder = t.emailPh;
-    document.getElementById('form-msg').placeholder = t.msgPh;
-    document.getElementById('form-btn').innerText = t.sendBtn;
 
-
-    // --- Font Adjustment Logic ---
+    // Font Logic
     const heroTitle = document.getElementById('hero-title');
     const heroContent = document.querySelector('.hero-content');
-
     if (currentLang === 'fr') {
-        heroTitle.style.fontSize = "2.45rem"; // Slightly smaller than 2.5rem
-        heroContent.style.fontSize = "0.92rem"; // Shrinks subtitle and text slightly
+        heroTitle.style.fontSize = "2.45rem";
+        heroContent.style.fontSize = "0.92rem";
     } else {
-        heroTitle.style.fontSize = "2.5rem"; // Back to original
-        heroContent.style.fontSize = "0.85rem";   // Back to original
+        heroTitle.style.fontSize = "2.5rem";
+        heroContent.style.fontSize = "0.85rem";
     }
 }
+
 function bookNow() {
-    window.location.href = "https://www.booking.com/hotel/fr/cozy-downtown-room-near-the-beach-with-private-bath.html?chal_t=1766291207941&force_referer=";
+    window.location.href = "https://www.booking.com/hotel/fr/cozy-downtown-room-near-the-beach-with-private-bath.html";
 }

@@ -48,8 +48,6 @@ function toggleLanguage() {
     document.getElementById('contact-title').innerText = t.contactTitle;
     document.getElementById('lang-toggle').innerText = t.langBtn;
     document.getElementById('map-title').innerText = t.mapTitle;
-    document.getElementsByName('email')[0].placeholder = t.emailPh;
-    document.getElementsByName('message')[0].placeholder = t.msgPh;
     document.getElementById('form-email').placeholder = t.emailPh;
     document.getElementById('form-msg').placeholder = t.msgPh;
     document.getElementById('form-btn').innerText = t.sendBtn;

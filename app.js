@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        navRooms: "Our Rooms", navContact: "Contact",
+        navRooms: "Our Rooms", navLocation: "Our Location", navContact: "Contact Us",
         heroTitle: "Welcome to Nice - Hotel Hôte D'Azur", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Charming stay with modern amenities in the heart of the city. <br>Address : 73 Boulevard Francois Grosso.",
         bookBtn: "Book Now", roomsTitle: "Our Rooms",
@@ -14,7 +14,7 @@ const translations = {
         successPage: "https://samdiab-droid.github.io/hoteazur/success.html"
     },
     fr: {
-        navRooms: "Nos Chambres", navContact: "Contact",
+        navRooms: "Nos Chambres", navLocation: "Notre Emplacement", navContact: "Contactez-nous",
         heroTitle: "Bienvenue à Nice - Hôtel Hôte D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Séjour charmant avec équipements modernes au cœur de la ville. <br>Adresse : 73 Boulevard François Grosso.",
         bookBtn: "Réserver", roomsTitle: "Nos Chambres",
@@ -37,6 +37,7 @@ function toggleLanguage() {
 
     // Standard updates
     document.getElementById('nav-rooms').innerText = t.navRooms;
+    document.getElementById('nav-location').innerText = t.navLocation;
     document.getElementById('nav-contact').innerText = t.navContact;
     document.getElementById('hero-title').innerText = t.heroTitle;
     document.getElementById('hero-subtitle').innerText = t.heroSubtitle;

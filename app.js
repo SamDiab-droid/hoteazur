@@ -55,10 +55,10 @@ function toggleLanguage() {
     document.getElementById('room1-desc').innerText = t.room1Desc;
     document.getElementById('room2-title').innerText = t.room2Title;
     document.getElementById('room2-desc').innerText = t.room2Desc;
-    document.getElementById('room3-title').innerText = t.room1Title;
-    document.getElementById('room3-desc').innerText = t.room1Desc;
-    document.getElementById('room4-title').innerText = t.room2Title;
-    document.getElementById('room4-desc').innerText = t.room2Desc;
+    document.getElementById('room3-title').innerText = t.room3Title;
+    document.getElementById('room3-desc').innerText = t.room3Desc;
+    document.getElementById('room4-title').innerText = t.room4Title;
+    document.getElementById('room4-desc').innerText = t.room4Desc;
 
     // Map & Contact Section
     document.getElementById('map-title').innerText = t.mapTitle;

@@ -1,7 +1,7 @@
 const translations = {
     en: {
         navRooms: "Our Rooms", navLocation: "Our Location", navContact: "Contact Us",
-        heroTitle: "Welcome to Nice - Hôte D'Azur - Guesthouse ", heroSubtitle: "Your Comfort, Our Priority",
+        heroTitle: "Welcome to Nice - Hôte D'Azur Guesthouse ", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Charming stay with modern amenities in the heart of the city. <br>Address : 73 Boulevard Francois Grosso.",
         directBtn: "Book Direct & Save 10%", bookingComBtn: "Book on Booking.com", 
         roomsTitle: "Our Rooms",
@@ -16,7 +16,7 @@ const translations = {
     },
     fr: {
         navRooms: "Nos Chambres", navLocation: "Notre Emplacement", navContact: "Contactez-nous",
-        heroTitle: "Bienvenue à Nice - Hôte D'Azur - Guesthouse", heroSubtitle: "Votre Confort, Notre Priorité",
+        heroTitle: "Bienvenue à Nice - Hôte D'Azur Guesthouse", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Séjour charmant avec équipements modernes au cœur de la ville. <br>Adresse : 73 Boulevard François Grosso.",
         directBtn: "Réserver en Direct (-10%)", bookingComBtn: "Réserver sur Booking.com", 
         roomsTitle: "Nos Chambres",

@@ -217,14 +217,24 @@ body {
     margin-right: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .rooms-grid {
         grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+    .hero {
+    height: auto;
+    min-height: 80vh;
+    align-items: flex-start;
     }
     .nav-menu {
     gap: 0.75rem;
     font-size: 0.85rem;
   }
+    .hero-content {
+    margin: 0 8px;
+    box-sizing: border-box;
+}
+
 }
 
 .room-card { padding: 2rem; border: 1px solid #eee; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }

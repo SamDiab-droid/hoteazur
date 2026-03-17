@@ -73,7 +73,7 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 10px 0;
     font-weight: 300;
 }
@@ -203,7 +203,7 @@ body {
     transform: scale(1.05);
 }
 
-.hero-title { font-size: 2.5rem; }
+.hero-title { font-size: 2.0rem; }
 .btn-primary { background: var(--accent-color); color: white; padding: 12px 30px; border-radius: 50px; border: none; cursor: pointer; margin-top: 20px; font-weight: bold; }
 
 .rooms-section, .contact-section { padding: 4rem 10%; text-align: center; }

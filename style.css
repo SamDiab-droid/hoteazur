@@ -28,7 +28,7 @@ body {
 
 .btn-lang {
     background: var(--primary-color); color: white;
-    border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;
+    border: none; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; cursor: pointer;
 }
 
 .hero {
@@ -221,6 +221,10 @@ body {
     .rooms-grid {
         grid-template-columns: 1fr; /* 1 per row on mobile */
     }
+    .nav-menu {
+    gap: 0.75rem;
+    font-size: 0.85rem;
+  }
 }
 
 .room-card { padding: 2rem; border: 1px solid #eee; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }

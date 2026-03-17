@@ -207,7 +207,22 @@ body {
 .btn-primary { background: var(--accent-color); color: white; padding: 12px 30px; border-radius: 50px; border: none; cursor: pointer; margin-top: 20px; font-weight: bold; }
 
 .rooms-section, .contact-section { padding: 4rem 10%; text-align: center; }
-.rooms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* force 2 per row */
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .rooms-grid {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+}
+
 .room-card { padding: 2rem; border: 1px solid #eee; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 
 .whatsapp-link { color: #25D366; text-decoration: none; font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; justify-content: center; }

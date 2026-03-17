@@ -1,12 +1,14 @@
 const translations = {
     en: {
         navRooms: "Our Rooms", navLocation: "Our Location", navContact: "Contact Us",
-        heroTitle: "Welcome to Nice - Hotel Hôte D'Azur", heroSubtitle: "Your Comfort, Our Priority",
+        heroTitle: "Welcome to Nice - Hôte D'Azur - Guesthouse ", heroSubtitle: "Your Comfort, Our Priority",
         heroText: "Charming stay with modern amenities in the heart of the city. <br>Address : 73 Boulevard Francois Grosso.",
         directBtn: "Book Direct & Save 10%", bookingComBtn: "Book on Booking.com", 
         roomsTitle: "Our Rooms",
-        room1Title: "4x - Deluxe Double Room : 100€", room1Desc: "Spacious and elegant, featuring a private bathroom. No cancellations allowed.",
-        room2Title: "3x - Comfort Triple Room : 105€", room2Desc: "Perfect for families, equipped with a private bathroom. No cancellations allowed.",
+        room1Title: "3x - Deluxe Double Room", room1Desc: "Spacious and elegant, featuring a private bathroom. No cancellations allowed.",
+        room2Title: "2x - Superior Deluxe Double Room", room2Desc: "Perfect for families, equipped with a private bathroom. No cancellations allowed.",
+        room3Title: "1x - Quadruple Room", room3Desc: "Perfect for a group of 4 friends, equipped with 4 single beds and a private bathroom. No cancellations allowed.",
+        room4Title: "1x - Triple Room", room4Desc: "Perfect for a group of 3 friends, equipped with 3 single beds and a private bathroom. No cancellations allowed.",
         mapTitle: "Our Location",
         contactTitle: "Contact Us", langBtn: "FR",
         emailPh: "Your Email", msgPh: "Your Message", sendBtn: "Send Message",
@@ -14,12 +16,14 @@ const translations = {
     },
     fr: {
         navRooms: "Nos Chambres", navLocation: "Notre Emplacement", navContact: "Contactez-nous",
-        heroTitle: "Bienvenue à Nice - Hôtel Hôte D'Azur", heroSubtitle: "Votre Confort, Notre Priorité",
+        heroTitle: "Bienvenue à Nice - Hôte D'Azur - Guesthouse", heroSubtitle: "Votre Confort, Notre Priorité",
         heroText: "Séjour charmant avec équipements modernes au cœur de la ville. <br>Adresse : 73 Boulevard François Grosso.",
         directBtn: "Réserver en Direct (-10%)", bookingComBtn: "Réserver sur Booking.com", 
         roomsTitle: "Nos Chambres",
-        room1Title: "4x - Chambre double deluxe : 100€", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée. Aucune annulation n'est acceptée.",
-        room2Title: "3x - Chambre triple confort : 105€", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
+        room1Title: "3x - Chambre double deluxe", room1Desc: "Spacieuse et élégante, avec une salle d'eau privée. Aucune annulation n'est acceptée.",
+        room2Title: "2x - Chambre double supérieure deluxe", room2Desc: "Parfaite pour les familles, équipée d’une salle d'eau privée. Aucune annulation n'est acceptée.",
+        room3Title: "1x - Chambre quadruple", room3Desc: "Idéal pour un groupe de 4 amis, avec 4 lits simples et une salle de bain privée. Aucune annulation n'est autorisée.",
+        room4Title: "1x - Chambre triple", room4Desc: "Idéal pour un groupe de 3 amis, avec 3 lits simples et une salle de bain privée. Aucune annulation n'est autorisée.",
         mapTitle: "Notre Emplacement",
         contactTitle: "Contactez-nous", langBtn: "EN",
         emailPh: "Votre Email", msgPh: "Votre Message", sendBtn: "Envoyer",
@@ -51,6 +55,10 @@ function toggleLanguage() {
     document.getElementById('room1-desc').innerText = t.room1Desc;
     document.getElementById('room2-title').innerText = t.room2Title;
     document.getElementById('room2-desc').innerText = t.room2Desc;
+    document.getElementById('room3-title').innerText = t.room1Title;
+    document.getElementById('room3-desc').innerText = t.room1Desc;
+    document.getElementById('room4-title').innerText = t.room2Title;
+    document.getElementById('room4-desc').innerText = t.room2Desc;
 
     // Map & Contact Section
     document.getElementById('map-title').innerText = t.mapTitle;

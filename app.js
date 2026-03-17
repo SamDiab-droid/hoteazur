@@ -74,6 +74,6 @@ function toggleLanguage() {
     // Standardize Font Sizes
     const heroTitle = document.getElementById('hero-title');
     const heroContent = document.querySelector('.hero-content');
-    heroTitle.style.fontSize = "2.5rem";
+    heroTitle.style.fontSize = "2.0rem";
     heroContent.style.fontSize = "1rem";
 }
